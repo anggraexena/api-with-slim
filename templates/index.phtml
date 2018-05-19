@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>BookLoan.API</title>
+        <link href="./bl1.png" rel="shortcut icon">
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                background-image: url('http://assets1.blurb.com/pages/website-assets/professional-photo-books/bookstore-quality-endsheets-6b3b315ce79e61635cd68342d48d4b502f978e7188531b38d55f06b59ca99f15.jpg');
+                background-size: cover;
+                margin: 50px 0 0 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-align: center;
+                color: #2C3E50;
+                font-size: 18px;
+            }
+
+            h1 {
+                color: #2C3E50;
+                letter-spacing: -3px;
+                font-family: 'Lato', sans-serif;
+                font-size: 100px;
+                font-weight: 200;
+                margin-bottom: 0;
+            }
+            a {
+              text-decoration: none;
+              color: #446CB3;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>API with Slim</h1>
+
+        <?php if (isset($name)) : ?>
+            <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
+            <p>You're in <a href="http://www.pikrskone.com">BookLoan API</a> !!!</p>
+        <?php else: ?>
+            <p>You're in <a target="_blank" href="http://www.pikrskone.com">BookLoan API</a></p>
+        <?php endif; ?>
+    </body>
+</html>
